@@ -8,7 +8,9 @@ export default function Login() {
         {/* Logo */}
         <div className="flex flex-col gap-[36px] items-center justify-center">
           <div className="px-[12px]">
-            <img src="/logo.png" alt="logo" />
+            <h1 className="md:text-[33px] text-[22px] text-center uppercase text-[#2EC4B6] font-norwester">
+              Migrate <span className="text-[#FF9F1C]">My PSA</span>
+            </h1>
           </div>
           <p className="hidden md:flex text-[16px] font-[400]  max-w-[318px] text-center">
             All in one solution to migrate data between SyncroMSP and SuperOps.Ai
@@ -20,7 +22,7 @@ export default function Login() {
 
         {/* Inputs */}
         <div className="flex flex-col gap-[36px] items-center justify-center">
-          <h1 className="md:text-[33px] text-[22px] text-center uppercase text-[#2EC4B6]">Login</h1>
+          <h1 className="md:text-[33px] text-[22px] text-center uppercase text-[#2EC4B6] font-norwester">Login</h1>
 
           <Formik
             initialValues={{ email: '', password: '' }}
@@ -39,7 +41,7 @@ export default function Login() {
                 <div>
                   <Input name="password" type="password" label="Password" placeholder="••••••••••••" />
                   <div className="flex justify-between text-[12px] text-[#000] mt-0">
-                    <p>Don’t Have an Account? Sign Up Now</p>
+                    <p>Don't Have an Account? Sign Up Now</p>
                     <p>Forgot Password?</p>
                   </div>
                 </div>
