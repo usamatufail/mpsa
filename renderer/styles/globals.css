@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Norwester */
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/n.otf');
+}
+/* Kollektif */
+@font-face {
+  font-family: 'Kollektif';
+  src: url('/fonts/k.ttf');
+}
+/* Source Sans Pro */
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('/fonts/ssp.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('/fonts/sspb.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @layer base {
+  html {
+    font-family: 'SourceSansPro', system-ui, sans-serif;
+  }
   body {
     @apply bg-gray-900 text-white;
   }

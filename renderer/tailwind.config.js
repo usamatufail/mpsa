@@ -6,13 +6,13 @@ module.exports = {
     './renderer/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    colors: {
-      // use colors only specified
-      white: colors.white,
-      gray: colors.gray,
-      blue: colors.blue,
+    extend: {
+      fontFamily: {
+        norwester: ['Norwester', 'sans-serif'],
+        kollektif: ['Kollektif', 'sans-serif'],
+        ['source-sans-pro']: ['SourceSansPro', 'sans-serif']
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
